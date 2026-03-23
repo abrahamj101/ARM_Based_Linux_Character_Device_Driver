@@ -8,6 +8,8 @@ This repository documents the end-to-end development of a custom hardware-accele
 ## 🛠 Project Overview
 The primary goal of this project was to offload integer multiplication to a custom-designed Verilog peripheral and create a high-performance communication path between the **ARM Cortex-A9** processor and the FPGA fabric.
 
+<img width="1416" height="611" alt="image" src="https://github.com/user-attachments/assets/7fe1a053-f70d-442f-8496-311a1abf2753" />
+
 ## 📂 Core Files
 * **`multiplier.c`**: A Linux Character Device Driver that implements the `file_operations` structure . It manages memory mapping (`ioremap`) and provides a `/dev/multiplier` interface for user applications.
 * **`multiply.c`**: A simpler Linux Kernel Module used for initial hardware validation and testing AXI-Lite register access.
